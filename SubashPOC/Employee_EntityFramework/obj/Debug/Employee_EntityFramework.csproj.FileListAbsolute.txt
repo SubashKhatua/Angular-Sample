@@ -1,0 +1,10 @@
+D:\Sample\Projects\SubashPOC\Employee_EntityFramework\bin\Employee_EntityFramework.dll.config
+D:\Sample\Projects\SubashPOC\Employee_EntityFramework\bin\Employee_EntityFramework.dll
+D:\Sample\Projects\SubashPOC\Employee_EntityFramework\bin\Employee_EntityFramework.pdb
+D:\Sample\Projects\SubashPOC\Employee_EntityFramework\bin\EntityFramework.dll
+D:\Sample\Projects\SubashPOC\Employee_EntityFramework\bin\EntityFramework.SqlServer.dll
+D:\Sample\Projects\SubashPOC\Employee_EntityFramework\bin\EntityFramework.xml
+D:\Sample\Projects\SubashPOC\Employee_EntityFramework\bin\EntityFramework.SqlServer.xml
+D:\Sample\Projects\SubashPOC\Employee_EntityFramework\obj\Debug\Employee_EntityFramework.csprojResolveAssemblyReference.cache
+D:\Sample\Projects\SubashPOC\Employee_EntityFramework\obj\Debug\Employee_EntityFramework.dll
+D:\Sample\Projects\SubashPOC\Employee_EntityFramework\obj\Debug\Employee_EntityFramework.pdb

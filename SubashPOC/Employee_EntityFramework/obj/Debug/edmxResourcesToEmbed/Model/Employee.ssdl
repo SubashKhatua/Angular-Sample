@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SubashTestModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SubashTest.dbo.Department' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Name="DepartmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" />
+    <Property Name="Credits" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SubashTest.dbo.Employee' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="JoiningDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SubashTest.dbo.Enrollment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Enrollment">
+    <Key>
+      <PropertyRef Name="EnrollmentID" />
+      <PropertyRef Name="DepartmentID" />
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EnrollmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Band" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="DepartmentID" Type="int" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="SubashTestModelStoreContainer">
+    <EntitySet Name="Department" EntityType="Self.Department" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Department].[DepartmentID] AS [DepartmentID], 
+    [Department].[Title] AS [Title], 
+    [Department].[Credits] AS [Credits]
+    FROM [dbo].[Department] AS [Department]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Employee" EntityType="Self.Employee" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Employee].[EmployeeID] AS [EmployeeID], 
+    [Employee].[LastName] AS [LastName], 
+    [Employee].[FirstName] AS [FirstName], 
+    [Employee].[JoiningDate] AS [JoiningDate]
+    FROM [dbo].[Employee] AS [Employee]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Enrollment" EntityType="Self.Enrollment" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Enrollment].[EnrollmentID] AS [EnrollmentID], 
+    [Enrollment].[Band] AS [Band], 
+    [Enrollment].[DepartmentID] AS [DepartmentID], 
+    [Enrollment].[EmployeeID] AS [EmployeeID]
+    FROM [dbo].[Enrollment] AS [Enrollment]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

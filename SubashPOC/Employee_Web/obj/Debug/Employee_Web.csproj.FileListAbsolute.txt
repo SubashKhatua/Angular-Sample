@@ -1,0 +1,6 @@
+D:\Sample\Projects\SubashPOC\Employee_Web\bin\Employee_Web.dll.config
+D:\Sample\Projects\SubashPOC\Employee_Web\bin\Employee_Web.dll
+D:\Sample\Projects\SubashPOC\Employee_Web\bin\Employee_Web.pdb
+D:\Sample\Projects\SubashPOC\Employee_Web\obj\Debug\Employee_Web.csprojResolveAssemblyReference.cache
+D:\Sample\Projects\SubashPOC\Employee_Web\obj\Debug\Employee_Web.dll
+D:\Sample\Projects\SubashPOC\Employee_Web\obj\Debug\Employee_Web.pdb
